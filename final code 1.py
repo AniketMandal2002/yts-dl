@@ -23,9 +23,9 @@ for i in range(0,10):
 
 a=int(input("Enter the index number of the youtube video you want to download"))
 
-os.system("youtube-dl -F https://www.youtube.com/watch?v=" + video_ids[a])
+os.system("yt-dlp -F https://www.youtube.com/watch?v=" + video_ids[a])
 b=int(input("Enter th code of the video you want to download or assamble"))
 c=int(input("Enter the code of the audio you to download or assamble with the video"))
 d=str(b)
 e=str(c)
-os.system("youtube-dl -f "+d+"+"+e+" https://www.youtube.com/watch?v=" + video_ids[a])
+os.system("yt-dlp -f "+d+"+"+e+" https://www.youtube.com/watch?v=" + video_ids[a])
